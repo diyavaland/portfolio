@@ -1,0 +1,88 @@
+/* About Container Styling */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+    max-width: 1000px;
+    margin: 80px auto 20px;
+}
+
+/* About Text Styling */
+.about h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about h1:hover {
+    color: #61dafb;
+    transform: scale(1.07);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-right: 20px;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* About Image Styling */
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin-top: 60px;
+    }
+
+    .about p {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .about h1 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+}

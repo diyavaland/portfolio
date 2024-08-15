@@ -1,0 +1,114 @@
+/* Projects Container Styling */
+.projects {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+    max-width: 1000px;
+    margin: 80px auto 20px;
+}
+
+/* Projects Title */
+.projects h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.projects h1:hover {
+    color: #61dafb;
+    transform: scale(1.07);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Project Styling */
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Title */
+.project h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project h2:hover {
+    color: #61dafb;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Description */
+.project p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.project span {
+    display: block;
+    font-size: 16px;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects {
+        padding: 30px;
+    }
+
+    .projects h1 {
+        font-size: 28px;
+    }
+
+    .project h2 {
+        font-size: 24px;
+    }
+
+    .project p {
+        font-size: 16px;
+    }
+
+    .project span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects h1 {
+        font-size: 24px;
+    }
+
+    .project h2 {
+        font-size: 20px;
+    }
+
+    .project p {
+        font-size: 14px;
+    }
+
+    .project span {
+        font-size: 12px;
+    }
+}
