@@ -29,7 +29,7 @@ function Resume() {
         <p>Class Representative in Level 4, Computer Programming</p>
       </section>
       <section>
-        <a href="/Diya Valand.pdf" download="Profile_Diya.pdf" className="download-button">
+        <a href="/Diya Valand.pdf" download="Diya Valand.pdf" className="download-button">
           Download Resume
         </a>
       </section>
