@@ -11,8 +11,8 @@ function Resume() {
       </section>
       <section>
         <h2>Experience</h2>
-        <p>Night Crew, Loblaw, Ottawa, ON (06/2023 - Present)</p>
-        <p>McDonald's, Night Crew (01/2024 - Present)</p>
+        <p>Night Crew, Loblaw, Ottawa, ON (06/2023 - Nov 2024)</p>
+        <p>McDonald's, Night Crew (01/2024 - Nov 2024)</p>
       </section>
       <section>
         <h2>Skills</h2>
