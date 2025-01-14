@@ -7,12 +7,12 @@ function Resume() {
       <h1>Resume</h1>
       <section>
         <h2>Education</h2>
-        <p>Diploma in Computer Programming, Algonquin College</p>
+        <p>Diploma in Computer Programming, Algonquin College (Aug 2024)</p>
       </section>
       <section>
         <h2>Experience</h2>
-        <p>Night Crew, Loblaw, Ottawa, ON (06/2023 - Nov 2024)</p>
-        <p>McDonald's, Night Crew (01/2024 - Nov 2024)</p>
+        <p>Cashier, Loblaw, Ottawa, ON (06/2023 - Nov 2024)</p>
+        <p>McDonald's, Crew member (01/2024 - Nov 2024)</p>
       </section>
       <section>
         <h2>Skills</h2>

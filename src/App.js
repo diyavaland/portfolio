@@ -7,6 +7,9 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import OtherProjects from './components/OtherProjects';
+import SQLInjectionPrevention from './components/SQLInjectionPrevention';
+import RealClientApp from './components/RealClientApp';
 import './App.css';
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/other-projects" element={<OtherProjects />} />
+          <Route path="/sql-injection-prevention" element={<SQLInjectionPrevention />} />
+          <Route path="/real-client-app" element={<RealClientApp />} />
         </Routes>
         <Footer />
       </div>

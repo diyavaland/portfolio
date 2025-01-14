@@ -31,7 +31,7 @@ function Contact() {
 
     alert('Message sent successfully');
   };
-
+  /*service_mrglb7w, template_w2v15xq*/
   return (
     <div className="contact">
       <h1>Contact Me</h1>
