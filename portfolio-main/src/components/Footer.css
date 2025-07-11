@@ -1,0 +1,59 @@
+/* Footer Styling */
+.footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: -100px; /* Initially hidden off the screen */
+    left: 0;
+    opacity: 0; /* Fully transparent initially */
+    transition: opacity 0.5s ease, bottom 0.5s ease; /* Smooth transition for showing the footer */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+/* Show footer when near bottom of page */
+.footer.visible {
+    bottom: 0; /* Brings the footer up into view */
+    opacity: 1; /* Makes the footer fully visible */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+}
+
+/* Footer hover effect */
+.footer:hover {
+    background-color: #61dafb;
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.footer:hover p {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 0;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}

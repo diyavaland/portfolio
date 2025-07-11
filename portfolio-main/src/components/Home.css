@@ -1,0 +1,96 @@
+.home {
+  max-width: 800px;
+  width: 100%;
+  margin: 80px auto 40px auto;
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.home h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home h1:hover {
+  color: #61dafb;
+  transform: scale(1.05);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.home p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: color 0.3s ease;
+}
+
+.home p:hover {
+  color: #61dafb;
+}
+
+.home strong {
+  color: #333;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.home strong:hover {
+  color: #0099cc;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .home {
+    padding: 25px 15px;
+    max-width: 600px;
+  }
+
+  .home h1 {
+    font-size: 28px;
+  }
+
+  .home p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    margin: 40px 15px;
+    padding: 20px 10px;
+    max-width: 100%;
+  }
+
+  .home h1 {
+    font-size: 24px;
+  }
+
+  .home p {
+    font-size: 14px;
+  }
+}
