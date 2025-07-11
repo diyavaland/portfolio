@@ -1,5 +1,3 @@
-import React from 'react';
-
 function SQLInjectionPrevention() {
   return (
     <div className="project-details">
