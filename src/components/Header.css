@@ -1,0 +1,75 @@
+/* Header Styling */
+.header {
+    background-color: #282c34;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header:hover {
+    background-color: #20232a; /* Slight color change on hover */
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header nav ul li {
+    margin: 0 20px;
+  }
+  
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header nav ul li a:hover {
+    color: #61dafb;
+    transform: scale(1.05); /* Zoom in slightly on hover */
+  }
+  
+  .header-logo {
+    font-size: 24px;
+    color: #61dafb;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .header-logo:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header nav ul li {
+      margin: 10px 0;
+    }
+  }
+  

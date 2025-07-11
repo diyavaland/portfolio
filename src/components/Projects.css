@@ -1,0 +1,180 @@
+/* Projects Container Styling */
+.projects {
+    padding: 60px;
+    background: linear-gradient(135deg, #f9f9f9, #e6e6e6);
+    text-align: center;
+    margin-top: 80px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    max-width: 1100px;
+    margin: 100px auto 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.projects:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Title */
+.projects h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #444;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.projects h1:hover {
+    color: #ff6f61;
+    transform: scale(1.1);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual Project Styling */
+.project {
+    margin-bottom: 35px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hover effects for projects */
+.project:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    background-color: #f0f8ff;
+}
+
+/* Decorative Overlay for Hover */
+.project::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+.project:hover::after {
+    opacity: 1;
+}
+
+/* Project Title */
+.project h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure links are still functional but not look like typical links */
+.project h2 a {
+    color: inherit; /* Inherit the parent color */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensures the area is clickable */
+    width: 100%; /* Ensure the whole h2 area is clickable */
+    padding: 5px 10px; /* Extra padding for better clickable area */
+}
+
+.project h2:hover {
+    color: #ff6f61;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    background-color: #f0f8ff;
+    padding: 10px 15px;
+}
+
+/* Project Description */
+.project p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin: 15px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.project p:hover {
+    color: #444;
+}
+
+/* Project Date or Tagline */
+.project span {
+    display: block;
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects {
+        padding: 40px;
+    }
+
+    .projects h1 {
+        font-size: 32px;
+    }
+
+    .project h2 {
+        font-size: 26px;
+    }
+
+    .project p {
+        font-size: 16px;
+    }
+
+    .project span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects h1 {
+        font-size: 28px;
+    }
+
+    .project h2 {
+        font-size: 22px;
+    }
+
+    .project p {
+        font-size: 14px;
+    }
+
+    .project span {
+        font-size: 12px;
+    }
+}
+
+/* Keyframes for Fade-in Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

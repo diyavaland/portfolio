@@ -1,0 +1,85 @@
+/* Container Styling */
+.home {
+    padding: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin-top: 80px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+  }
+  
+  /* Welcome Title */
+  .home h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Hover effect on title */
+  }
+  
+  .home h1:hover {
+    color: #61dafb;
+    transform: scale(1.05); /* Slight scale on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Description Paragraphs */
+  .home p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Skill Highlights */
+  .home strong {
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .home strong:hover {
+    color: #61dafb;
+    transform: scale(1.1); /* Emphasize on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home {
+      padding: 30px;
+    }
+  
+    .home h1 {
+      font-size: 28px;
+    }
+  
+    .home p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home h1 {
+      font-size: 24px;
+    }
+  
+    .home p {
+      font-size: 14px;
+    }
+  }
+  
